@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>popular_element</key>
+        <value>Water</value>
+    </entry>
+    <entry>
+        <key>planet_url_mercury</key>
+        <value>http://i.dailymail.co.uk/i/pix/2013/02/15/article-2279059-17997B92000005DC-373_634x519.jpg</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

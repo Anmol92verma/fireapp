@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firely.fireapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="fireapp.base.FireApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="fireapp.ui.PlanetListActivity"
+            android:label="@string/title_planet_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fireapp.ui.PlanetDetailActivity"
+            android:label="@string/title_planet_detail"
+            android:parentActivityName="fireapp.ui.PlanetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fireapp.ui.PlanetListActivity" />
+        </activity>
+    </application>
+
+</manifest>
